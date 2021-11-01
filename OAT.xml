@@ -61,7 +61,9 @@ Note:If the text contains special characters, please escape them according to th
             <policy name="projectPolicy" desc="">
 				<policyitem type="compatibility" name="InvalidLicense" path="src/Makefile.am" desc="the License of this file is MIT"/>
 				<policyitem type="compatibility" name="InvalidLicense" path="Makefile.am" desc="the License of this file is MIT"/>
-				<policyitem type="compatibility" name="GPL-3.0+" path="m4/ax_check_compile_flag.m4" desc="the License of this file is MIT"/>				
+				<policyitem type="compatibility" name="GPL-3.0+" path="m4/ax_check_compile_flag.m4" desc="the License of this file is MIT"/>
+                <policyitem type="compatibility" name="InvalidLicense" path="BUILD.gn" desc="the License of this file is MIT"/>
+                <policyitem type="compatibility" name="InvalidLicense" path="config.h" desc="the License of this file is MIT"/>		
             </policy>
         </policylist>
     </oatconfig>
