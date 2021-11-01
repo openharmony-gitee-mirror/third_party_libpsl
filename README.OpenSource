@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "libpsl",
+        "License": "MIT"
+        "License File": "LICENSE",
+        "Owner": "lixin113@huawei.com",
+        "Version Number": "0.21.1",
+        "Upstream URL": "https://github.com/rockdaboot/libpsl",
+        "Description": "libpsl - C library to handle the Public Suffix List"
+    }
+]
