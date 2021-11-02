@@ -1,3 +1,5 @@
+# Copyright (c) 2021 Huawei Device Co., Ltd.
+# Licensed under MIT (the "License");
 
 import("//build/ohos.gni")
 
