@@ -14,29 +14,27 @@
 import("//build/ohos.gni")
 
 config("libpsl_config") {
-    cflags = [
-        "-DHAVE_CONFIG_H",
-        "-Wno-sign-compare"
-    ]
+  cflags = [
+    "-DHAVE_CONFIG_H",
+    "-Wno-sign-compare",
+  ]
 }
 
 ohos_source_set("psl_dynamic") {
-    sources = [
-        "src/psl.c",
-        "src/lookup_string_in_fixed_set.c"
-    ]
+  sources = [
+    "src/lookup_string_in_fixed_set.c",
+    "src/psl.c",
+  ]
 
-    configs = [":libpsl_config"]
-    include_dirs = [
-        "//third_party/libpsl",
-        "//third_party/libpsl/include",
-    ]
+  configs = [ ":libpsl_config" ]
+  include_dirs = [
+    "//third_party/libpsl",
+    "//third_party/libpsl/include",
+  ]
 }
 
 ohos_shared_library("libpsl") {
-    deps = [
-        ":psl_dynamic",
-    ]
-    part_name = "multimedia_histreamer"
-    subsystem_name = "multimedia"
+  deps = [ ":psl_dynamic" ]
+  part_name = "multimedia_media_standard"
+  subsystem_name = "multimedia"
 }
